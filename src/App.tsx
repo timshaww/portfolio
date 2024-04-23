@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import { Header } from './components/Header';
 
 function App() {
@@ -7,9 +6,7 @@ function App() {
 
 	return (
 		<>
-			<div className=''>
-				<Header />
-			</div>
+			<Header />
 
 			<div className='card'>
 				<button onClick={() => setCount((count) => count + 1)}>
