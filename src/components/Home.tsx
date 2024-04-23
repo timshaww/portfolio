@@ -1,5 +1,4 @@
 import SplitFlap from './SplitFlap';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const Home = () => {
 	return (
