@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Howl } from 'howler';
 import Panel, { FlipPanel } from '../panel';
-import defaultSound from '../assets/flip.mp3';
+import defaultSound from '../../../assets/flip.mp3';
 
 import * as css from './styles.module.scss';
 
