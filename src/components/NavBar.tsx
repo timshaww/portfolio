@@ -11,11 +11,13 @@ const NavBar = () => {
 		<>
 			{/* menu */}
 			<ul className='hidden md:flex'>
-				<li>Home</li>
-				<li>About</li>
-				<li>Resume</li>
-				<li>Projects</li>
-				<li>Contact</li>
+				<li className='mt-[3px]'>Home</li>
+				<li className='mt-[3px]'>Resume</li>
+				<li className='mt-[3px]'>Projects</li>
+				<li className='mt-[3px] mr-4'>Blog</li>
+				<li className='bg-white mr-4 border-black border-[2px] py-[3px] rounded-md hover:bg-black hover:text-white duration-200'>
+					Contact
+				</li>
 			</ul>
 
 			{/* hamburger */}
