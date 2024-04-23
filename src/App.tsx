@@ -1,19 +1,23 @@
-import { useState } from "react";
-import "./App.css";
+import { useState } from 'react';
+import './App.css';
+import { Header } from './components/Header';
 
 function App() {
-  const [count, setCount] = useState(2);
+	const [count, setCount] = useState(2);
 
-  return (
-    <>
-      <h1>Tim's Portfolio</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          I love you {count} times more
-        </button>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className=''>
+				<Header />
+			</div>
+
+			<div className='card'>
+				<button onClick={() => setCount((count) => count + 1)}>
+					I love you {count} times more
+				</button>
+			</div>
+		</>
+	);
 }
 
 export default App;
