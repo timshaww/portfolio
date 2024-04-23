@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import resume from '../assets/ShawTimothyResume.pdf';
 
 const NavBar = () => {
 	const [navOpen, setNavOpen] = useState(false);
@@ -53,7 +54,7 @@ const NavBar = () => {
 					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
-							href=''
+							href='https://www.linkedin.com/in/timshaww'
 						>
 							LinkedIn <FaLinkedin size={30} />
 						</a>
@@ -61,7 +62,7 @@ const NavBar = () => {
 					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
-							href=''
+							href='https://github.com/timshaww'
 						>
 							Github <FaGithub size={30} />
 						</a>
@@ -69,7 +70,7 @@ const NavBar = () => {
 					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
-							href=''
+							href='mailto:shawtimothye@gmail.com?subject=I Saw Your Portfolio!'
 						>
 							Email <HiOutlineMail size={30} />
 						</a>
@@ -77,7 +78,7 @@ const NavBar = () => {
 					<li className='w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
-							href=''
+							href={resume}
 						>
 							Resume <BsFillPersonLinesFill size={30} />
 						</a>
