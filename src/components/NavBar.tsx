@@ -22,7 +22,9 @@ const NavBar = () => {
 
 			{/* hamburger */}
 			<div onClick={handleClick} className='md:hidden z-10 px-2'>
-				{!navOpen ? <FaBars /> : <FaTimes />}
+				<div className='border-black border-2 rounded-lg p-1'>
+					{!navOpen ? <FaBars /> : <FaTimes />}
+				</div>
 			</div>
 
 			{/* mobile */}
@@ -33,7 +35,7 @@ const NavBar = () => {
 						: 'absolute z-[9] top-0 left-0 w-full h-screen backdrop-blur flex flex-col items-center justify-center'
 				}
 			>
-				<ul>
+				<ul className='border-black border-4 rounded-lg p-4 bg-white'>
 					<li className='py-4 text-2xl flex justify-center'>Home</li>
 					<li className='py-4 text-2xl flex justify-center'>
 						Resume
