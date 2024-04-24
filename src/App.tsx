@@ -8,6 +8,7 @@ function App() {
 		<>
 			<Header />
 			<Home />
+
 			{/* <div className='card'>
 				<button onClick={() => setCount((count) => count + 1)}>
 					I love you {count} times more

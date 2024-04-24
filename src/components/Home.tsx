@@ -1,8 +1,9 @@
+import Head from './Head';
 import SplitFlap from './SplitFlap';
 
 const Home = () => {
 	return (
-		<div className='flex flex-col h-96 items-center justify-center'>
+		<div className='flex flex-col h-2/3 items-center justify-center'>
 			<div className='bg-black rounded-xl p-1'>
 				<div className='bg-white rounded-lg p-2'>
 					<SplitFlap />
@@ -20,6 +21,9 @@ const Home = () => {
 				<h1 className='flex justify-center mt-1'>
 					A full-stack developer, who loves bringing ideas to reality.
 				</h1>
+			</div>
+			<div className='flex mt-5 justify-center items-center border-black border-4 rounded-lg p-2 w-64'>
+				<Head />
 			</div>
 		</div>
 	);
