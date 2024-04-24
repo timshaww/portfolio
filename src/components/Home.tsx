@@ -3,13 +3,13 @@ import SplitFlap from './SplitFlap';
 
 const Home = () => {
 	return (
-		<div className='flex flex-col h-2/3 items-center justify-center'>
+		<div className='flex flex-col h-2/3 items-center justify-center mx-auto'>
 			<div className='bg-black rounded-xl p-1'>
 				<div className='bg-white rounded-lg p-2'>
 					<SplitFlap />
 				</div>
 			</div>
-			<div className='mt-5 border-black border-4 p-4 rounded-lg m-2'>
+			<div className='mt-5 border-black border-4 p-4 rounded-lg'>
 				<div className='flex justify-center items-baseline'>
 					<h1 className='flex justify-center mr-2 text-3xl'>
 						Hey, I'm
