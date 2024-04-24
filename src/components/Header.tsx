@@ -1,6 +1,5 @@
 import Logo from '../assets/Portfolio.png';
 import NavBar from './NavBar';
-import Head from './Head';
 
 export function Header() {
 	return (
@@ -13,9 +12,9 @@ export function Header() {
 						style={{ width: '70px' }}
 					/>
 				</div>
-				<div className='flex justify-center w-[70px] border-black border-[3px] rounded-lg p-1'>
+				{/* <div className='flex justify-center w-[70px] border-black border-[3px] rounded-lg p-1'>
 					<Head />
-				</div>
+				</div> */}
 			</div>
 			<div className='flex items-center'>
 				<NavBar />

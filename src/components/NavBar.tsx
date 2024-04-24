@@ -51,7 +51,7 @@ const NavBar = () => {
 			</div>
 
 			{/* social icons */}
-			<div className='flex fixed flex-col top-[65%] left-0'>
+			<div className='flex fixed flex-col top-[60%] left-0'>
 				<ul>
 					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
 						<a
