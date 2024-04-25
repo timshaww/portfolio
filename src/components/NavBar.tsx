@@ -13,7 +13,7 @@ const NavBar = () => {
 		<>
 			{/* menu */}
 			<ul className='hidden md:flex'>
-				<div className='flex flex-row items-center border-black border-2 rounded-lg '>
+				<div className='flex flex-row items-center border-black border-[3px] rounded-lg '>
 					<li className='hover:font-bold hover:underline duration-100'>
 						<Link to='/portfolio/'>Home</Link>
 					</li>
@@ -27,7 +27,7 @@ const NavBar = () => {
 						<Link to='/portfolio/blog'>Blog</Link>
 					</li>
 				</div>
-				<li className='bg-white mr-4 ml-4 border-black border-2 py-[3px] rounded-lg hover:bg-black hover:text-white duration-200'>
+				<li className='bg-white mr-4 ml-4 border-black border-[3px] py-[3px] rounded-lg hover:bg-black hover:text-white duration-200'>
 					Contact
 				</li>
 			</ul>
