@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Blog = () => {
 	return (
 		<div className='flex flex-col h-2/3 items-center justify-center mx-auto'>
