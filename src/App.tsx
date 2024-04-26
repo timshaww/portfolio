@@ -12,10 +12,10 @@ function App() {
 		<>
 			<Header />
 			<Routes>
-				<Route path='/portfolio/' element={<Home />} />
-				<Route path='/portfolio/about' element={<About />} />
-				<Route path='/portfolio/projects' element={<Projects />} />
-				<Route path='/portfolio/blog' element={<Blog />} />
+				<Route path='/' element={<Home />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/projects' element={<Projects />} />
+				<Route path='/blog' element={<Blog />} />
 			</Routes>
 			{/* <div className='card'>
 				<button onClick={() => setCount((count) => count + 1)}>

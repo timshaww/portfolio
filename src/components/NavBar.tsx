@@ -15,16 +15,16 @@ const NavBar = () => {
 			<ul className='hidden md:flex'>
 				<div className='flex flex-row items-center border-black border-[3px] rounded-lg '>
 					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/portfolio/'>Home</Link>
+						<Link to='/'>Home</Link>
 					</li>
 					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/portfolio/about'>About</Link>
+						<Link to='/about'>About</Link>
 					</li>
 					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/portfolio/projects'>Projects</Link>
+						<Link to='/projects'>Projects</Link>
 					</li>
 					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/portfolio/blog'>Blog</Link>
+						<Link to='/blog'>Blog</Link>
 					</li>
 				</div>
 				<li className='bg-white mr-4 ml-4 border-black border-[3px] py-[3px] rounded-lg hover:bg-black hover:text-white duration-200'>
@@ -49,23 +49,23 @@ const NavBar = () => {
 			>
 				<ul className='border-black border-4 rounded-lg p-4 bg-white'>
 					<li className='py-4 text-2xl flex justify-center'>
-						<Link to='/portfolio/' onClick={handleClick}>
+						<Link to='/' onClick={handleClick}>
 							Home
 						</Link>
 					</li>
 					<li className='py-4 text-2xl flex justify-center'>
-						<Link to='/portfolio/about' onClick={handleClick}>
+						<Link to='/about' onClick={handleClick}>
 							About
 						</Link>
 					</li>
 					<li className='py-4 text-2xl flex justify-center'>
-						<Link to='/portfolio/projects' onClick={handleClick}>
+						<Link to='/projects' onClick={handleClick}>
 							Projects
 						</Link>
 					</li>
 					<li className='py-4 text-2xl flex justify-center'>
 						{' '}
-						<Link to='/portfolio/blog' onClick={handleClick}>
+						<Link to='/blog' onClick={handleClick}>
 							Blog
 						</Link>
 					</li>
