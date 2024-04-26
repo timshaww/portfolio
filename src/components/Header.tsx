@@ -1,16 +1,15 @@
-import Logo from '../assets/Portfolio.png';
+import Logo from './Logo';
 import NavBar from './NavBar';
+import { Link } from 'react-router-dom';
 
 export function Header() {
 	return (
 		<div className='flex w-full justify-between'>
 			<div className='flex flex-row items-center '>
 				<div className='flex items-center p-2'>
-					<img
-						src={Logo}
-						alt='Logo Image'
-						style={{ width: '70px' }}
-					/>
+					<Link to='/'>
+						<Logo />
+					</Link>
 				</div>
 				{/* <div className='flex justify-center w-[70px] border-black border-[3px] rounded-lg p-1'>
 					<Head />
