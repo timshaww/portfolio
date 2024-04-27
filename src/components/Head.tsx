@@ -22,7 +22,7 @@ const Head = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className='flex justify-center flex-col'>
 			<img
 				src={images[index]}
 				alt={'Head ${index}'}

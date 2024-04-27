@@ -22,7 +22,7 @@ const Home = () => {
 					A full-stack developer, who loves bringing ideas to reality.
 				</h1>
 			</div>
-			<div className='flex mt-5 justify-center items-center border-black border-4 rounded-lg p-2 w-64'>
+			<div className='flex mt-5 justify-center items-center border-black border-4 rounded-lg px-2 pt-2 w-64'>
 				<Head />
 			</div>
 		</div>
