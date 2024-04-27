@@ -1,30 +1,29 @@
-import { BsDash } from 'react-icons/bs';
-
 const About = () => {
 	const experience = [
 		{
 			company: 'NeurOn Therapy',
-			role: 'Full-Stack Developer',
+			role: 'FullStack Developer',
 			date: 'Dec 2022 - Present',
 			description: {
-				techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
+				techStack: ['React', 'TypeScript', 'Python', 'AWS'],
 				bullets: [
-					'Lead the development of a web application that helps patients with mental health disorders',
-					'Implemented a feature that allows patients to track their mood over time',
-					'Collaborated with a team of 5 developers to deliver a high-quality product',
+					'Designed and implemented a series of React-based games to rehab stroke patients and improve areas of cognition.',
+					'Spearheaded full-stack development in a previous app iteration, employing HMTL Canvas, Konva.js, AWS EC2, Flask, AWS Lambda, and Twilio for robust game delivery and patient engagement. Leveraged AWS Dynamo DB for data storage and used Pandas, Numpy, and Matplotlib for data analysis.',
+					'Successfully led the completion of 5 diverse projects, including cued Stroop test, impulse control game, pattern recognition game, memory recall game, and internal data analysis dashboard.',
 				],
 			},
 		},
 		{
 			company: 'TradeStation Technologies',
-			role: 'SDET Intern',
+			role: 'SDE Intern',
 			date: 'June 2023 - November 2023',
 			description: {
-				techStack: ['C#', 'Selenium', 'TestNG'],
+				techStack: ['JavaScript', 'SQL', 'Selenium'],
 				bullets: [
-					'Automated test cases for a trading platform using Selenium',
-					'Wrote test plans for new features',
-					'Worked with developers to ensure the quality of the product',
+					'Facilitated duplicate remediation during data pipeline transfer to Salesforce CRM from Microsoft Dynamics by using JavaScript and SQL to create rules that identify and flag duplicated contacts.',
+					'Developed and deployed an automated UI testing suite using Selenium WebDriver, creating 24 tests for Dynamics CRM, and integrated the tests into the Azure release pipeline.',
+					'Automated the integration testing of creating and modifying contacts, and validation of synchronization between Salesforce and Dynamics, by leveraging JavaScript in Postman which achieved an 80% reduction is testing time, and replaced a manual process.',
+					'Conducted unit testing on internal tools using Apex on Salesforce Lightning Web Components',
 				],
 			},
 		},
@@ -41,7 +40,7 @@ const About = () => {
 					sds d v ds f a e r gds df q 3 f sgf gw g ht rj yt w d f re
 				</div>
 			</div>
-			<div className=' flex justify-center border-black border-4 p-4 mt-16 rounded-lg text-2xl w-[80%] mx-4'>
+			<div className=' flex justify-center border-black border-4 p-4 mt-12 rounded-lg text-2xl w-[80%] mx-4'>
 				Experience
 			</div>
 			<div className='flex flex-col jusitfy-center w-[80%]'>
@@ -49,17 +48,34 @@ const About = () => {
 					<>
 						<div
 							key={index}
-							className='hidden md:flex flex-row justify-center mt-3 w-full '
+							className='hidden lg:flex flex-row justify-between mt-3 w-full '
 						>
-							<div className='border-black border-4 rounded-lg p-4 w-[20%] mr-3'>
+							<div className='border-black border-4 rounded-lg p-4 w-[19%]'>
 								<p className='sm:text-lg text-xl font-bold text-pretty'>
 									{exp.company}
 								</p>
 								<p className='mt-2'>{exp.role}</p>
 								<p>{exp.date}</p>
 							</div>
-							<div className='border-black border-4  items-center rounded-lg p-4 w-[80%]'>
-								<div className='flex flex-row border-black border-[3px] px-1 rounded-md'>
+							<div className='border-black border-4  items-center rounded-lg p-4 w-[79%]'>
+								<div className='flex flex-col '>
+									{exp.description &&
+										typeof exp.description === 'object' && (
+											<ul>
+												{exp.description.bullets.map(
+													(bullet, index) => (
+														<li
+															key={index}
+															className='flex flex-row items-center'
+														>
+															{bullet}
+														</li>
+													)
+												)}
+											</ul>
+										)}
+								</div>
+								<div className='flex flex-row mt-1 border-black border-[3px] px-1 rounded-md'>
 									{exp.description &&
 										typeof exp.description === 'object' &&
 										exp.description.techStack &&
@@ -72,62 +88,26 @@ const About = () => {
 													{tech}&nbsp;
 												</p>
 											)
-										)}
-								</div>
-								<div className='flex flex-col '>
-									{exp.description &&
-										typeof exp.description === 'object' && (
-											<ul>
-												{exp.description.bullets.map(
-													(bullet, index) => (
-														<li
-															key={index}
-															className='flex flex-row items-center'
-														>
-															<BsDash
-																style={{
-																	width: '1em',
-																	height: '1em',
-																	marginRight:
-																		'0.5em',
-																}}
-															/>
-															{bullet}
-														</li>
-													)
-												)}
-											</ul>
 										)}
 								</div>
 							</div>
 						</div>
 						<div
 							key={index}
-							className='flex md:hidden flex-row mt-3 w-full'
+							className='flex lg:hidden flex-row justify-between mt-3 w-full'
 						>
-							<div className='flex items-center justify-center border-black border-4 rounded-lg p-4 w-[20%] mr-3'>
-								<p className='text-lg font-bold text-pretty w-full '>
-									{exp.company}
-								</p>
-							</div>
-							<div className='border-black border-4 rounded-lg p-4 w-[80%] text-sm'>
-								<p>{exp.role}</p>
-								<p>{exp.date}</p>
-								<div className='flex flex-row border-black border-[3px] px-1 rounded-md'>
-									{exp.description &&
-										typeof exp.description === 'object' &&
-										exp.description.techStack &&
-										exp.description.techStack.map(
-											(tech, index) => (
-												<p
-													key={index}
-													className='text-sm'
-												>
-													{tech}&nbsp;
-												</p>
-											)
-										)}
+							<div className='flex items-center justify-center border-black border-4 rounded-lg p-4 w-[18%]'>
+								<div className='flex items-center justify-center h-full w-full transform -rotate-90'>
+									<p className='text-lg font-bold whitespace-nowrap '>
+										{exp.company}
+									</p>
 								</div>
+							</div>
+							<div className='border-black border-4 rounded-lg p-4 w-[78%] text-sm'>
+								<p className='font-bold '>{exp.role}</p>
+								<p className='italic text-xs mb-1'>
+									{exp.date}
+								</p>
 								<div className='flex flex-col '>
 									{exp.description &&
 										typeof exp.description === 'object' && (
@@ -143,6 +123,21 @@ const About = () => {
 													)
 												)}
 											</ul>
+										)}
+								</div>
+								<div className='flex flex-row mt-1 marker:justify-start border-black border-[3px] px-1 rounded-md'>
+									{exp.description &&
+										typeof exp.description === 'object' &&
+										exp.description.techStack &&
+										exp.description.techStack.map(
+											(tech, index) => (
+												<p
+													key={index}
+													className='text-sm whitespace-nowrap'
+												>
+													{tech} &nbsp;
+												</p>
+											)
 										)}
 								</div>
 							</div>

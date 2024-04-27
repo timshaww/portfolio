@@ -9,20 +9,20 @@ const Home = () => {
 					<SplitFlap />
 				</div>
 			</div>
-			<div className='mt-5 border-black border-4 p-4 rounded-lg'>
+			<div className='m-5 border-black border-4 p-4 rounded-lg'>
 				<div className='flex justify-center items-baseline'>
 					<h1 className='flex justify-center mr-2 text-3xl'>
 						Hey, I'm
 					</h1>
 					<h1 className='flex justify-center text-3xl font-bold border-black border-4 p-1 rounded-lg'>
-						Tim Shaw
+						Tim
 					</h1>
 				</div>
 				<h1 className='flex justify-center mt-1'>
 					A full-stack developer, who loves bringing ideas to reality.
 				</h1>
 			</div>
-			<div className='flex mt-5 justify-center items-center border-black border-4 rounded-lg px-2 pt-2 w-64'>
+			<div className='flex  justify-center items-center border-black border-4 rounded-lg px-2 pt-2 w-64'>
 				<Head />
 			</div>
 		</div>

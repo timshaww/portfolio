@@ -75,7 +75,7 @@ const NavBar = () => {
 			{/* social icons */}
 			<div className='hidden md:flex fixed flex-col top-[60%] left-0'>
 				<ul>
-					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
+					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href='https://www.linkedin.com/in/timshaww'
@@ -83,7 +83,7 @@ const NavBar = () => {
 							LinkedIn <FaLinkedin size={30} />
 						</a>
 					</li>
-					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
+					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href='https://github.com/timshaww'
@@ -91,7 +91,7 @@ const NavBar = () => {
 							Github <FaGithub size={30} />
 						</a>
 					</li>
-					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
+					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href='mailto:shawtimothye@gmail.com?subject=I Saw Your Portfolio!'
@@ -99,7 +99,7 @@ const NavBar = () => {
 							Email <HiOutlineMail size={30} />
 						</a>
 					</li>
-					<li className='w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] hover:ml-[-10px] duration-200'>
+					<li className='w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href={resume}
