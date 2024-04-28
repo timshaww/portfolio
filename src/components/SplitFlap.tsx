@@ -10,13 +10,13 @@ const SplitFlapDisplayStyled = styled(SplitFlapDisplay)`
 	}
 
 	@media (min-width: 601px) and (max-width: 900px) {
-		--fontSize: 30px;
-		--characterWidth: 60px;
+		--fontSize: 20px;
+		--characterWidth: 40px;
 	}
 
 	@media (min-width: 901px) {
-		--fontSize: 30px;
-		--characterWidth: 80px;
+		--fontSize: 25px;
+		--characterWidth: 50px;
 	}
 `;
 
