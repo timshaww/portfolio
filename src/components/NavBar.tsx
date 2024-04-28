@@ -47,7 +47,7 @@ const NavBar = () => {
 						: 'absolute z-[9] top-0 left-0 w-full h-screen backdrop-blur flex flex-col items-center justify-center'
 				}
 			>
-				<ul className='border-black border-4 rounded-lg p-4 bg-white w-44'>
+				<ul className='border-black border-[3px] rounded-lg p-4 bg-white w-44'>
 					<li className='py-4 text-2xl flex justify-center hover:font-bold hover:underline duration-100'>
 						<Link to='/' onClick={handleClick}>
 							Home

@@ -30,17 +30,17 @@ const About = () => {
 	];
 	return (
 		<div className='flex flex-col h-2/3 items-center justify-center mx-auto'>
-			<div className=' flex justify-center border-black border-4 p-4 rounded-lg text-4xl w-[80%] mx-4'>
+			<div className=' flex justify-center border-black border-[3px] p-4 rounded-lg text-4xl w-[80%] mx-4'>
 				About Me
 			</div>
-			<div className='flex justify-center border-black border-4  mt-3 rounded-lg text-sm w-[80%] mx-4 p-4'>
+			<div className='flex justify-center border-black border-[3px]  mt-3 rounded-lg text-sm w-[80%] mx-4 p-4'>
 				<div className='lg:max-w-[80%]'>
 					I didnt start coding until my 2nd year of college. but blah
 					blha bfgj nfjd fg ds gf e f g fs e g dgs ew w e dg sd gwe f
 					sds d v ds f a e r gds df q 3 f sgf gw g ht rj yt w d f re
 				</div>
 			</div>
-			<div className=' flex justify-center border-black border-4 p-4 mt-12 rounded-lg text-2xl w-[80%] mx-4'>
+			<div className=' flex justify-center border-black border-[3px] p-4 mt-12 rounded-lg text-2xl w-[80%] mx-4'>
 				Experience
 			</div>
 			<div className='flex flex-col jusitfy-center w-[80%]'>
@@ -50,14 +50,14 @@ const About = () => {
 							key={index}
 							className='hidden lg:flex flex-row justify-between mt-3 w-full '
 						>
-							<div className='border-black border-4 rounded-lg p-4 w-[19%]'>
+							<div className='border-black border-[3px] rounded-lg p-4 w-[19%]'>
 								<p className='sm:text-lg text-xl font-bold text-pretty'>
 									{exp.company}
 								</p>
 								<p className='mt-2'>{exp.role}</p>
 								<p>{exp.date}</p>
 							</div>
-							<div className='border-black border-4  items-center rounded-lg p-4 w-[79%]'>
+							<div className='border-black border-[3px]  items-center rounded-lg p-4 w-[79%]'>
 								<div className='flex flex-col '>
 									{exp.description &&
 										typeof exp.description === 'object' && (
@@ -96,14 +96,14 @@ const About = () => {
 							key={index}
 							className='flex lg:hidden flex-row justify-between mt-3 w-full'
 						>
-							<div className='flex items-center justify-center border-black border-4 rounded-lg p-4 w-[18%]'>
+							<div className='flex items-center justify-center border-black border-[3px] rounded-lg p-4 w-[18%]'>
 								<div className='flex items-center justify-center h-full w-full transform -rotate-90'>
 									<p className='text-lg font-bold whitespace-nowrap '>
 										{exp.company}
 									</p>
 								</div>
 							</div>
-							<div className='border-black border-4 rounded-lg p-4 w-[78%] text-sm'>
+							<div className='border-black border-[3px] rounded-lg p-4 w-[78%] text-sm'>
 								<p className='font-bold '>{exp.role}</p>
 								<p className='italic text-xs mb-1'>
 									{exp.date}
