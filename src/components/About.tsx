@@ -35,9 +35,13 @@ const About = () => {
 			</div>
 			<div className='flex justify-center border-black border-[3px]  mt-3 rounded-lg text-sm w-[80%] mx-4 p-4'>
 				<div className='lg:max-w-[80%]'>
-					I didnt start coding until my 2nd year of college. but blah
-					blha bfgj nfjd fg ds gf e f g fs e g dgs ew w e dg sd gwe f
-					sds d v ds f a e r gds df q 3 f sgf gw g ht rj yt w d f re
+					I didnt start coding until my 2nd year of college. But after
+					starting, I just couldn't stop. I love making things from
+					scratch, and have adopted React/Next.js as my favorite way
+					to do so. Aside from my side projects, I've had wonderful
+					opportunities to work at the startup, small-business, and
+					enterprise level, giving me a insights on how to develop
+					both quickly and reliably.
 				</div>
 			</div>
 			<div className=' flex justify-center border-black border-[3px] p-4 mt-12 rounded-lg text-2xl w-[80%] mx-4'>
