@@ -1,9 +1,12 @@
+import AboutSection from './About/AboutSection';
+import AboutHeader from './About/AboutHeader';
+
 const Projects = () => {
 	return (
-		<div className='flex flex-col h-2/3 items-center justify-center mx-auto'>
-			<div className='border-black border-[3px] p-4 rounded-lg text-4xl'>
-				My Projects:
-			</div>
+		<div className='flex flex-col items-center max-w-[1000px] justify-center m-auto'>
+			<AboutSection>
+				<AboutHeader>Projects</AboutHeader>
+			</AboutSection>
 		</div>
 	);
 };
