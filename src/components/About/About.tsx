@@ -1,7 +1,6 @@
 import AboutHeader from './AboutHeader';
 import AboutSection from './AboutSection';
 import AboutExperienceBlock from './AboutExperienceBlock';
-import exp from 'constants';
 
 const About = () => {
 	const experience = [

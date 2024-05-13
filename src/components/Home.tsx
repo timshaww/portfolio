@@ -1,4 +1,3 @@
-import Head from './Head';
 import SplitFlap from './SplitFlap';
 import Selfie from '../assets/Selfie.jpg';
 
