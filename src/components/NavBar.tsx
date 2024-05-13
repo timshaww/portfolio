@@ -13,7 +13,7 @@ const NavBar = () => {
 		<>
 			{/* menu */}
 			<ul className='hidden md:flex'>
-				<div className='flex flex-row items-center justify-center border-black border-[3px] rounded-lg w-[20rem]'>
+				<div className='flex flex-row items-center justify-center border-zinc-200 border-[1px] shadow rounded-lg w-[20rem]'>
 					<li className='hover:font-bold hover:underline duration-100'>
 						<Link to='/'>Home</Link>
 					</li>
@@ -27,24 +27,22 @@ const NavBar = () => {
 						<Link to='/blog'>Blog</Link>
 					</li>
 				</div>
-				<li className='bg-white mr-4 ml-4 border-black border-[3px] py-[3px] rounded-lg hover:bg-black hover:text-white duration-200'>
+				<li className='mr-4 ml-4 border-zinc-200 border-[1px] shadow py-[3px] rounded-lg hover:font-bold hover:underline duration-200'>
 					Contact
 				</li>
 			</ul>
-
 			{/* hamburger */}
-			<div onClick={handleClick} className='md:hidden z-10 px-2'>
+			<div onClick={handleClick} className='md:hidden z-20 px-2'>
 				<div className='border-black border-2 rounded-lg p-1'>
 					{!navOpen ? <FaBars /> : <FaTimes />}
 				</div>
 			</div>
-
 			{/* mobile */}
 			<div
 				className={
 					!navOpen
 						? 'hidden'
-						: 'absolute z-[9] top-0 left-0 w-full h-screen backdrop-blur flex flex-col items-center justify-center'
+						: 'absolute z-[19] top-0 left-0 w-full h-screen backdrop-blur flex flex-col items-center justify-center'
 				}
 			>
 				<ul className='border-black border-[3px] rounded-lg p-4 bg-white w-44'>
@@ -71,11 +69,10 @@ const NavBar = () => {
 					</li>
 				</ul>
 			</div>
-
 			{/* social icons */}
 			<div className='hidden md:flex fixed flex-col top-[60%] left-0'>
 				<ul>
-					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
+					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-zinc-200 border-[1px] shadow rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href='https://www.linkedin.com/in/timshaww'
@@ -83,7 +80,7 @@ const NavBar = () => {
 							LinkedIn <FaLinkedin size={30} />
 						</a>
 					</li>
-					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
+					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-zinc-200 border-[1px] shadow rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href='https://github.com/timshaww'
@@ -91,7 +88,7 @@ const NavBar = () => {
 							Github <FaGithub size={30} />
 						</a>
 					</li>
-					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
+					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-zinc-200 border-[1px] shadow rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href='mailto:shawtimothye@gmail.com?subject=I Saw Your Portfolio!'
@@ -99,7 +96,7 @@ const NavBar = () => {
 							Email <HiOutlineMail size={30} />
 						</a>
 					</li>
-					<li className='w-[160px] h-[60px] flex justify-between items-center border-black border-2 rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
+					<li className='w-[160px] h-[60px] flex justify-between items-center border-zinc-200 border-[1px] shadow rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
 							className='flex justify-between items-center w-full'
 							href={resume}
