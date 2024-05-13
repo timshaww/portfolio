@@ -4,8 +4,8 @@ import Selfie from '../assets/Selfie.jpg';
 
 const Home = () => {
 	return (
-		<div className='flex flex-col h-2/3 items-center justify-center mx-auto'>
-			<div className='bg-zinc-200 rounded-[7px] p-[1px] shadow'>
+		<div className='flex flex-col items-center justify-center mx-auto'>
+			<div className='bg-zinc-200 rounded-[7px] p-[1px] shadow mt-28'>
 				<div className='bg-white rounded-md p-2 border-zinc-200'>
 					<SplitFlap />
 				</div>
