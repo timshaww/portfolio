@@ -16,7 +16,7 @@ const Head = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setIndex((prev) => (prev + 1) % images.length);
-		}, 125);
+		}, 200);
 
 		return () => clearInterval(interval);
 	}, []);

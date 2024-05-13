@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { FaA, FaArrowRightLong } from 'react-icons/fa6';
 
 interface AboutExperienceBlockProps {
 	company: string;
@@ -24,22 +25,29 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 					<p className='mt-2'>{role}</p>
 					<p className='italic'>{date}</p>
 				</div>
-				<div className='border-inherot border-b-[1px] border-l-[1px] last:border-b-[0] w-[75%] items-center'>
+				<div className='border-inherit border-b-[1px] border-l-[1px] last:border-b-[0] w-[75%] items-center'>
 					<div className='flex flex-col p-4'>
 						<ul>
 							{bullets.map((bullet, index) => (
-								<li
-									key={index}
-									className='flex flex-row items-center'
-								>
-									{bullet}
-								</li>
+								<div className='flex flex-row items-baseline w-full'>
+									<FaArrowRightLong
+										key={index}
+										className='w-[2%] '
+									/>
+
+									<li
+										key={index}
+										className='flex flex-row items-center w-[98%]'
+									>
+										{bullet}
+									</li>
+								</div>
 							))}
 						</ul>
 					</div>
 					<div className='flex flex-row mt-1 border-inherit border-b-[1px] border-t-[1px] py-1 px-8'>
 						{techStack.map((tech, index) => (
-							<p key={index} className='text-sm'>
+							<p key={index} className='text-sm px-[12px]'>
 								{tech}&nbsp;
 							</p>
 						))}
@@ -61,22 +69,28 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 					<div className='flex flex-col px-4'>
 						<ul>
 							{bullets.map((bullet, index) => (
-								<li
-									key={index}
-									className='flex flex-row items-center'
-								>
-									{bullet}
-								</li>
+								<div className='flex flex-row items-baseline w-full'>
+									<FaArrowRightLong
+										key={index}
+										className='w-[3%]'
+									/>
+									<li
+										key={index}
+										className='flex flex-row items-center w-[97%]'
+									>
+										{bullet}
+									</li>
+								</div>
 							))}
 						</ul>
 					</div>
-					<div className='flex flex-row mt-1 marker:justify-start border-inherit border-t-[1px] py-1 px-8'>
+					<div className='flex flex-row mt-1 marker:justify-start border-inherit border-t-[1px] py-1 px-8 overflow-scroll'>
 						{techStack.map((tech, index) => (
 							<p
 								key={index}
-								className='text-sm whitespace-nowrap pr-2'
+								className='text-sm whitespace-nowrap px-2'
 							>
-								{tech}&nbsp;
+								{tech}
 							</p>
 						))}
 					</div>

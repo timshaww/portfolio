@@ -40,11 +40,11 @@ const About = () => {
 				<p className='flex justify-center p-4 max-w-[80%] m-auto'>
 					I didnt start coding until my 2nd year of college. But after
 					starting, I just couldn't stop. I love making things from
-					scratch, and have adopted React/Next.js as my favorite way
-					to do so. Aside from my side projects, I've had wonderful
-					opportunities to work at the startup, small-business, and
-					enterprise level, giving me a insights on how to develop
-					both quickly and reliably
+					scratch, and React/Next.js is my favorite way to do so.
+					Aside from my projects, I've had wonderful opportunities to
+					work at the startup, small-business, and enterprise level,
+					giving me a insights on how to develop both quickly and
+					reliably.
 				</p>
 			</AboutSection>
 			<AboutSection>
