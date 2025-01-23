@@ -19,7 +19,7 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 	return (
 		<>
 			{/* Computers */}
-			<div className='hidden lg:flex flex-row jusitfy-between full'>
+			<div className='hidden md:flex flex-row jusitfy-between full'>
 				<div className='border-inherit border-b-[1px] last:border-b-0 p-4 w-[25%]'>
 					<p className='text-lg font-bold'>{company}</p>
 					<p className='mt-2'>{role}</p>
@@ -55,7 +55,7 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 				</div>
 			</div>
 			{/* Mobile */}
-			<div className='flex lg:hidden flex-row justify-between w-full'>
+			<div className='flex md:hidden flex-row justify-between w-full'>
 				<div className='flex items-center justify-center border-inherit border-b-[1px] p-4 w-[20%]'>
 					<div className='flex items-center justify-center h-full w-full transform -rotate-90'>
 						<p className='text-lg whitespace-nowrap font-bold'>

@@ -1,10 +1,10 @@
 import { FC, PropsWithChildren } from 'react';
 
-interface AboutHeaderProps {
+interface PageHeaderProps {
 	children: React.ReactNode;
 }
 
-const AboutHeader: FC<PropsWithChildren<AboutHeaderProps>> = ({ children }) => {
+const PageHeader: FC<PropsWithChildren<PageHeaderProps>> = ({ children }) => {
 	return (
 		<div className='flex justify-center p-4 text-4xl border-inherit border-b-[1px] last:border-b-0'>
 			{children}
@@ -12,4 +12,4 @@ const AboutHeader: FC<PropsWithChildren<AboutHeaderProps>> = ({ children }) => {
 	);
 };
 
-export default AboutHeader;
+export default PageHeader;

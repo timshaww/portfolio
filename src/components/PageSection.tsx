@@ -1,10 +1,10 @@
 import { FC, PropsWithChildren, ReactNode } from 'react';
 
-interface AboutSectionProps {
+interface PageSectionProps {
 	children: ReactNode;
 }
 
-const AboutSection: FC<PropsWithChildren<AboutSectionProps>> = ({
+const PageSection: FC<PropsWithChildren<PageSectionProps>> = ({
 	children,
 	...props
 }) => {
@@ -18,4 +18,4 @@ const AboutSection: FC<PropsWithChildren<AboutSectionProps>> = ({
 	);
 };
 
-export default AboutSection;
+export default PageSection;

@@ -1,6 +1,7 @@
-import AboutHeader from './AboutHeader';
-import AboutSection from './AboutSection';
+import PageHeader from '../PageHeader';
+import PageSection from '../PageSection';
 import AboutExperienceBlock from './AboutExperienceBlock';
+import PageLayout from '../PageLayout';
 
 const About = () => {
 	const experience = [
@@ -34,9 +35,9 @@ const About = () => {
 	];
 
 	return (
-		<div className='flex flex-col items-center max-w-[1000px] justify-center m-auto'>
-			<AboutSection>
-				<AboutHeader>About Me</AboutHeader>
+		<PageLayout>
+			<PageSection>
+				<PageHeader>About Me</PageHeader>
 				<p className='flex justify-center p-4 max-w-[80%] m-auto'>
 					I didnt start coding until my 2nd year of college. But after
 					starting, I just couldn't stop. I love making things from
@@ -46,9 +47,9 @@ const About = () => {
 					giving me a insights on how to develop both quickly and
 					reliably.
 				</p>
-			</AboutSection>
-			<AboutSection>
-				<AboutHeader>Experience</AboutHeader>
+			</PageSection>
+			<PageSection>
+				<PageHeader>Experience</PageHeader>
 				{experience.map((exp, index) => (
 					<AboutExperienceBlock
 						key={index}
@@ -59,8 +60,8 @@ const About = () => {
 						techStack={exp.description.techStack}
 					/>
 				))}
-			</AboutSection>
-		</div>
+			</PageSection>
+		</PageLayout>
 	);
 };
 
