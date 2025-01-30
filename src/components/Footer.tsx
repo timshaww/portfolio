@@ -1,4 +1,4 @@
-import Resume from '../../public/ShawTimothyResume.pdf';
+import Resume from '../../public/TimothyShawResume.pdf';
 
 const Footer = () => {
 	return (
@@ -8,15 +8,15 @@ const Footer = () => {
 					<p>made by me, with ♡</p>
 				</div>
 				<div className='flex flex-row space-x-2'>
-					<a href='https://www.linkedin.com/in/timshaww' target='_blank' rel='noopener noreferrer'>
+					<a href='https://www.linkedin.com/in/timshaww' target='_blank' rel='noopener noreferrer' className='hover:underline duration-200'>
 						linkedin
 					</a>
-					<span>/</span>
-					<a href='https://github.com/timshaww' target='_blank' rel='noopener noreferrer'>
+					<span className='cursor-default'>/</span>
+					<a href='https://github.com/timshaww' target='_blank' rel='noopener noreferrer' className='hover:underline duration-200'>
 						github
 					</a>
-					<span>/</span>
-					<a href={Resume} target='_blank' rel='noopener noreferrer'>
+					<span className='cursor-default'>/</span>
+					<a href={Resume} target='_blank' rel='noopener noreferrer' className='hover:underline duration-200'>
 						resume
 					</a>
 				</div>

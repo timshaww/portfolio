@@ -12,6 +12,9 @@ import TradestationFull from '../../../public/tradestation full.png';
 
 import WorkExperience from './components/WorkExperience';
 
+// TODO: fix neuron video repeating
+// TODO: new resume
+
 const Home = () => {
 	return (
 		<div className='flex flex-col items-center justify-center mx-auto'>
