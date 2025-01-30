@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FaA, FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 interface AboutExperienceBlockProps {
 	company: string;
@@ -9,13 +9,7 @@ interface AboutExperienceBlockProps {
 	bullets: string[];
 }
 
-const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
-	company,
-	role,
-	date,
-	techStack,
-	bullets,
-}) => {
+const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({ company, role, date, techStack, bullets }) => {
 	return (
 		<>
 			{/* Computers */}
@@ -30,15 +24,9 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 						<ul>
 							{bullets.map((bullet, index) => (
 								<div className='flex flex-row items-baseline w-full'>
-									<FaArrowRightLong
-										key={index}
-										className='w-[2%] '
-									/>
+									<FaArrowRightLong key={index} className='w-[2%] ' />
 
-									<li
-										key={index}
-										className='flex flex-row items-center w-[98%]'
-									>
+									<li key={index} className='flex flex-row items-center w-[98%]'>
 										{bullet}
 									</li>
 								</div>
@@ -58,9 +46,7 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 			<div className='flex md:hidden flex-row justify-between w-full'>
 				<div className='flex items-center justify-center border-inherit border-b-[1px] p-4 w-[20%]'>
 					<div className='flex items-center justify-center h-full w-full transform -rotate-90'>
-						<p className='text-lg whitespace-nowrap font-bold'>
-							{company}
-						</p>
+						<p className='text-lg whitespace-nowrap font-bold'>{company}</p>
 					</div>
 				</div>
 				<div className='border-inherit border-l-[1px] border-b-[1px] w-[80%] text-sm'>
@@ -70,14 +56,8 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 						<ul>
 							{bullets.map((bullet, index) => (
 								<div className='flex flex-row items-baseline w-full'>
-									<FaArrowRightLong
-										key={index}
-										className='w-[3%]'
-									/>
-									<li
-										key={index}
-										className='flex flex-row items-center w-[97%]'
-									>
+									<FaArrowRightLong key={index} className='w-[3%]' />
+									<li key={index} className='flex flex-row items-center w-[97%]'>
 										{bullet}
 									</li>
 								</div>
@@ -86,10 +66,7 @@ const AboutExperienceBlock: FC<AboutExperienceBlockProps> = ({
 					</div>
 					<div className='flex flex-row mt-1 marker:justify-start border-inherit border-t-[1px] py-1 px-8 overflow-scroll'>
 						{techStack.map((tech, index) => (
-							<p
-								key={index}
-								className='text-sm whitespace-nowrap px-2'
-							>
+							<p key={index} className='text-sm whitespace-nowrap px-2'>
 								{tech}
 							</p>
 						))}

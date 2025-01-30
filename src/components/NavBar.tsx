@@ -1,48 +1,39 @@
-import { useState } from 'react';
-import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import resume from '../assets/ShawTimothyResume.pdf';
+// import { useState } from 'react';
+// import { FaBars, FaTimes } from 'react-icons/fa';
+// import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa';
+// import { HiOutlineMail } from 'react-icons/hi';
+// import { BsFillPersonLinesFill } from 'react-icons/bs';
+// import resume from '../assets/ShawTimothyResume.pdf';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
-	const [navOpen, setNavOpen] = useState(false);
-	const handleClick = () => setNavOpen(!navOpen);
+	// const [navOpen, setNavOpen] = useState(false);
+	// const handleClick = () => setNavOpen(!navOpen);
 
 	return (
 		<>
 			{/* menu */}
-			<ul className='hidden md:flex'>
-				<div className='flex flex-row items-center justify-center border-zinc-200 border-[1px] shadow rounded-lg w-[20rem]'>
-					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/'>Home</Link>
+			<ul className='flex'>
+				<div className='flex flex-row items-center justify-center rounded-lg '>
+					<li className='hover:font-bold duration-100 w-full'>
+						<Link to='/about'>about</Link>
 					</li>
-					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/about'>About</Link>
+					<li className='hover:font-bold duration-100'>
+						<Link to='/projects'>work</Link>
 					</li>
-					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/projects'>Projects</Link>
-					</li>
-					<li className='hover:font-bold hover:underline duration-100'>
-						<Link to='/blog'>Blog</Link>
+					<li className='hover:font-bold duration-100'>
+						<Link to='/blog'>blog</Link>
 					</li>
 				</div>
-				<li className='mr-4 ml-4 border-zinc-200 border-[1px] shadow py-[3px] rounded-lg hover:font-bold hover:underline duration-200'>
-					Contact
-				</li>
 			</ul>
 			{/* hamburger */}
-			<div onClick={handleClick} className='md:hidden z-20 px-2'>
-				<div className='border-zinc-200 border-[1px] shadow rounded-lg p-1'>
-					{!navOpen ? <FaBars /> : <FaTimes />}
-				</div>
-			</div>
+			{/* <div onClick={handleClick} className='md:hidden z-20 px-2'>
+				<div className='border-zinc-200 border-[1px] shadow rounded-lg p-1'>{!navOpen ? <FaBars /> : <FaTimes />}</div>
+			</div> */}
 			{/* mobile */}
-			<div
+			{/* <div
 				className={
-					!navOpen
-						? 'hidden'
-						: 'absolute z-[19] top-0 left-0 w-full h-screen backdrop-blur flex flex-col items-center justify-center'
+					!navOpen ? 'hidden' : 'absolute z-[19] top-0 left-0 w-full h-screen backdrop-blur flex flex-col items-center justify-center'
 				}
 			>
 				<ul className='border-zinc-200 border-[1px] rounded-lg p-4 bg-white w-44'>
@@ -68,9 +59,9 @@ const NavBar = () => {
 						</Link>
 					</li>
 				</ul>
-			</div>
+			</div> */}
 			{/* social icons */}
-			<div className='hidden md:flex fixed flex-col top-[60%] left-0'>
+			{/* <div className='hidden md:flex fixed flex-col top-[60%] left-0'>
 				<ul>
 					<li className='mb-[2px] w-[160px] h-[60px] flex justify-between items-center border-zinc-200 border-[1px] shadow rounded-xl ml-[-100px] bg-white hover:ml-[-10px] duration-200'>
 						<a
@@ -105,7 +96,7 @@ const NavBar = () => {
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div> */}
 		</>
 	);
 };

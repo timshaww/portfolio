@@ -25,9 +25,7 @@ const SplitFlap = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setSplitFlapValue((prevValue) =>
-				prevValue === 'TIME TO MEET' ? 'TIMOTHY SHAW' : 'TIME TO MEET'
-			);
+			setSplitFlapValue((prevValue) => (prevValue === 'TIME TO MEET' ? 'TIMOTHY SHAW' : 'TIME TO MEET'));
 		}, 8000);
 		return () => clearInterval(interval);
 	}, []);
