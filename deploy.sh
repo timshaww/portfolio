@@ -3,7 +3,7 @@
 # abort on errors
 set -e
 
-# build
+# build the project
 npm run build
 
 # navigate into the build output directory
@@ -12,20 +12,11 @@ cd dist
 # place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-
+# ensure the CNAME file exists
 echo 'www.timothy-shaw.com' > CNAME
 
-git init
-git checkout -B main
-git add -A
-git commit -m 'deploy'
+# deploy using gh-pages
+cd ..
+gh-pages -b gh-pages -d dist
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:timshaww/portfolio.git main:gh-pages
-
-cd -
+echo "Deployed successfully!"

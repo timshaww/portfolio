@@ -2,7 +2,7 @@ import Resume from '../../public/TimothyShawResume.pdf';
 
 const Footer = () => {
 	return (
-		<div className='w-full py-2 px-4'>
+		<div className='w-full py-2 px-4 mt-4'>
 			<div className='flex flex-row justify-between items-center max-w-6xl mx-auto text-sm text-gray-500'>
 				<div>
 					<p>made by me, with ♡</p>

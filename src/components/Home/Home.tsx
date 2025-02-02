@@ -18,11 +18,6 @@ import WorkExperience from './components/WorkExperience';
 const Home = () => {
 	return (
 		<div className='flex flex-col items-center justify-center mx-auto'>
-			{/* <div className=' mt-28'>
-				<div className='bg-white rounded-md p-2 border-zinc-200'>
-					<SplitFlap />
-				</div>
-			</div> */}
 			<div className='flex items-center jusifty-center min-h-[calc(100vh)]'>
 				<div className='m-5 p-4 rounded-lg '>
 					<h1 className='flex  text-3xl font-bold mb-8 ml-5'>hey, i'm tim shaw.</h1>
@@ -30,7 +25,6 @@ const Home = () => {
 						<img src={Polaroid} alt='' className='rounded w-96 ' />
 						<img src={Arrow} alt='' className='absolute -bottom-16 md:-bottom-32 -right-6 md:-right-36 size-20 md:size-44 -rotate-12' />
 					</div>
-					{/* <h1 className='flex justify-center text-center mt-1'>a full-stack developer, who loves bringing ideas to reality.</h1> */}
 				</div>
 			</div>
 			<WorkExperience
@@ -41,7 +35,7 @@ const Home = () => {
 				role='one man show, 2024-now'
 				explaination='i founded zotana - system that integrates all my tools in a way that works for me. i am currently working on the first version.'
 			>
-				<div className='group p-12 md:mx-0 mx-4 rounded-xl bg-red-50 flex items-center justify-center'>
+				<div className='group md:p-12 p-4 md:mx-0 mx-4 rounded-xl bg-red-50 flex items-center justify-center'>
 					<img src={ZotanaFull} alt='' className='group-hover:scale-105 duration-500' />
 				</div>
 			</WorkExperience>
@@ -53,7 +47,7 @@ const Home = () => {
 				role='sdet intern, 2023-now'
 				explaination="i solo'd the automated ui testing on a crm system from 2007, and helped with other day-to-day stuff."
 			>
-				<div className='group p-12 md:mx-0 mx-4 rounded-xl bg-blue-50 flex items-center justify-center'>
+				<div className='group md:p-12 p-4 md:mx-0 mx-4 rounded-xl bg-blue-50 flex items-center justify-center'>
 					<img src={TradestationFull} alt='' className='group-hover:scale-105 duration-500' />
 				</div>
 				<div className='w-full text-right'>
@@ -68,8 +62,8 @@ const Home = () => {
 				role='founding engineer, 2022-2024'
 				explaination='i delivered 5 projects: cloud deployment, a user dashboard, internal data analytics, an intake assessment, and 15 games.'
 			>
-				<div className='p-12 hover:p-8 duration-500 md:mx-0 mx-4 rounded-xl bg-[#e4fae4] flex items-center justify-center'>
-					<video src={NeuronClip} className=' rounded-3xl' autoPlay muted loop playsInline />
+				<div className='md:p-12 p-4 hover:p-2 md:hover:p-8 duration-500 md:mx-0 mx-4 rounded-xl bg-[#e4fae4] flex items-center justify-center'>
+					<video src={NeuronClip} className='md:rounded-3xl rounded' autoPlay muted loop playsInline />
 				</div>
 			</WorkExperience>
 			<WorkExperience
@@ -81,7 +75,7 @@ const Home = () => {
 				explaination='i cold called and pitched myself to the mymun team. then i designed and coded the frontend of a conference ranking system.'
 				last
 			>
-				<div className='group p-12 md:mx-0 mx-4 rounded-xl bg-yellow-50 flex items-center justify-center'>
+				<div className='group md:p-12 p-4 md:mx-0 mx-4 rounded-xl bg-yellow-50 flex items-center justify-center'>
 					<img src={MymunClip} className='group-hover:scale-105 duration-500' />
 				</div>
 			</WorkExperience>

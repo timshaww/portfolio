@@ -1,6 +1,6 @@
 // import Head from './Head';
 // import Logo from './Logo';
-// import NavBar from './NavBar';
+import NavBar from './NavBar';
 import { Link } from 'react-router-dom';
 
 export function Header() {
@@ -15,7 +15,9 @@ export function Header() {
 						</Link>
 					</div>
 				</div>
-				<div className='flex items-center'>{/* <NavBar /> */}</div>
+				<div className='flex items-center'>
+					<NavBar />
+				</div>
 			</div>
 		</div>
 	);

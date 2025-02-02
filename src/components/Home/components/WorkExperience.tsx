@@ -15,7 +15,7 @@ const WorkExperience = ({ logo, logoClassName, children, description, explainati
 	return (
 		<div
 			className={clsx(
-				'snap-start px-4 md:px-0 flex flex-col items-center justify-center max-w-3xl',
+				'px-4 md:px-0 flex flex-col items-center justify-center max-w-3xl',
 				last ? 'min-h-[calc(100vh-80px)]' : 'min-h-[calc(100vh)]'
 			)}
 		>
