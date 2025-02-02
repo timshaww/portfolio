@@ -2,8 +2,8 @@
 // import PageSection from '../PageSection';
 // import AboutExperienceBlock from './AboutExperienceBlock';
 // import PageLayout from '../PageLayout';
-import AboutVid from '../../../public/pier sunset.mp4';
-import MePic from '../../../public/central park.jpg';
+import AboutVid from '/pier sunset.mp4';
+import MePic from '/central park.jpg';
 import TimelineEvent from './TimelineEvent';
 
 const About = () => {

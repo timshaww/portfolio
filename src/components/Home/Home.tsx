@@ -1,14 +1,14 @@
 // import SplitFlap from './SplitFlap';
-import Polaroid from '../../../public/polaroid.png';
-import Arrow from '../../../public/arrow.png';
-import NeuronLogo from '../../../public/neuron logo.png';
-import NeuronClip from '../../../public/neuron clip.mp4';
-import MymunLogo from '../../../public/mymun logo.svg';
-import MymunClip from '../../../public/mymun full.png';
-import ZotanaLogo from '../../../public/zotana logo.png';
-import ZotanaFull from '../../../public/zotana full.png';
-import TradestationLogo from '../../../public/tradestation logo.png';
-import TradestationFull from '../../../public/tradestation full.png';
+import Polaroid from '/polaroid.png';
+import Arrow from '/arrow.png';
+import NeuronLogo from '/neuron logo.png';
+import NeuronClip from '/neuron clip.mp4';
+import MymunLogo from '/mymun logo.svg';
+import MymunClip from '/mymun full.png';
+import ZotanaLogo from '/zotana logo.png';
+import ZotanaFull from '/zotana full.png';
+import TradestationLogo from '/tradestation logo.png';
+import TradestationFull from '/tradestation full.png';
 
 import WorkExperience from './components/WorkExperience';
 
