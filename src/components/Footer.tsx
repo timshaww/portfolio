@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Resume from '../../public/TimothyShawResume.pdf';
 
 const Footer = () => {
@@ -19,6 +20,10 @@ const Footer = () => {
 					<a href={Resume} target='_blank' rel='noopener noreferrer' className='hover:underline duration-200'>
 						resume
 					</a>
+					<span className='cursor-default'>/</span>
+					<Link to='/donate' className='hover:underline duration-200'>
+						$
+					</Link>
 				</div>
 			</div>
 		</div>
