@@ -10,7 +10,7 @@ import ZotanaFull from '/zotana full.png';
 import TradestationLogo from '/tradestation logo.png';
 import TradestationFull from '/tradestation full.png';
 
-import WorkExperience from './components/WorkExperience';
+import WorkExperience from './WorkExperience';
 
 // TODO: fix neuron video repeating
 // TODO: new resume
